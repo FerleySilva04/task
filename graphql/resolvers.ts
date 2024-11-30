@@ -1,6 +1,6 @@
 import prisma from "../lib/prisma";
 import { GraphQLContext } from "@/lib/context";
-import { compare, genSaltSync, hash, hashSync } from "bcryptjs";
+import { compare, genSaltSync, hash, hashSync } from "bcrypt-ts";
 import { logout, requireAuth } from "@/lib/auth";
 import { Role } from "@/utils/enums";
 import { TaskStatus } from "@prisma/client";
